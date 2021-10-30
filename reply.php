@@ -99,6 +99,10 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                   </div>';
+                  ?>
+                  <script>window.history.go(-1)</script>                  
+                  <?php
+                  exit();
         } 
     }
     ?>
