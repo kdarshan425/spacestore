@@ -44,7 +44,7 @@
             font-family: 'Prompt', sans-serif;
         }
     </style>
-    <title>Reply</title>
+    
 </head>
 
 <body>
@@ -168,7 +168,7 @@
         </div>
        <?php
     $id = $_GET['threadid'];
-    $sql = "SELECT * FROM `reply` WHERE th_id=$id"; 
+    $sql = "SELECT * FROM `reply` WHERE `th_id`='$id'"; 
     $result = mysqli_query($conn, $sql);
     $noResult = true;
     while($row = mysqli_fetch_assoc($result)){

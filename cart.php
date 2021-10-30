@@ -108,13 +108,7 @@ if (!isset($_SESSION['sno'])) {
         </div>
         </div>
        
-        <footer class="footer" style="margin-top:0px;background: black;padding-top: 24px;padding-bottom: 24px; width: 100%">
-        <center>
-            <div>
-                <p style="color: #c7c5c5;font-weight: 300;font-family: 'Raleway', sans-serif;">All rights reserved <br> Engineered by <a target="_blank" href="https://www.linkedin.com/in/darshan-khope-9400571a2/">Darshan Khope</a> </p>
-            </div>
-        </center>      
-    </footer>
+        
         
         <script>
         AOS.init({
