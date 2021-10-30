@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPACE STORE</title>
-    
+    <title>SPACE STORE</title>    
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://use.fontawesome.com/9fc82f32ca.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +18,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <style>
-        
+        .col-md-4{
+            padding:30px;
+        }
 
+        .cen{
+            text-align:start;
+        }
+        @media (max-width: 568px){
+            .cen{
+                text-align:center;
+            }
+        }
+        @media (max-width: 568px){
+            .main-div{
+                padding-top: 110px !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -49,7 +63,36 @@
             </div>        
         </div>
     </div>
-
+    <div style="padding-top:70px;">
+        <div class="container">
+            <div style="padding:30px;">
+                <div style="background:#e5e5e5;border: black 2px solid;">
+                    <div style="padding:30px;">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="container cen">
+                                    <h4 style="font-family: 'Prompt', sans-serif;font-weight: bolder;">Fast Shipping</h4>
+                                    <h6 style="font-family: 'Raleway', sans-serif;font-weight: bold;">Items ship out in 1-2 business days</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="container cen">
+                                    <h4 style="font-family: 'Prompt', sans-serif;font-weight: bolder;">30-Day Returns</h4>
+                                    <h6 style="font-family: 'Raleway', sans-serif;font-weight: bold;">On all items</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="container cen">
+                                    <h4 style="font-family: 'Prompt', sans-serif;font-weight: bolder;">Customer Support</h4>
+                                    <h6 style="font-family: 'Raleway', sans-serif;font-weight: bold;">Call us or email us with questions</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div  id="about" style="background-color: white;">
         <div class="container">
             <center>
@@ -118,9 +161,14 @@
                                     </div>
                                 </div>
                             </a>                  
-                        </div>        
-                                
-        
+                        </div> 
+                        <div style="padding-top:30px;">
+                        <center>
+                            <div class="container">
+                                <a style="color:black;text-decoration:none;" href="product.php"><h3 style="font-family: 'Raleway', sans-serif;font-weight:bolder;">View all products</h3></a>
+                            </div>
+                        </center>
+                    </div>           
                     </div>
                 </div>            
                 </center>
