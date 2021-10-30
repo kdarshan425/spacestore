@@ -54,7 +54,7 @@
     
     <?php
     $id = $_GET['threadid'];
-    $sql = "SELECT * FROM `threads` WHERE th_id=$id"; 
+    $sql = "SELECT * FROM `threads` WHERE `th_id`='$id'"; 
     $result = mysqli_query($conn, $sql);
     while($row = mysqli_fetch_assoc($result)){
         $product_id = $row['th_product_id'];
@@ -87,7 +87,7 @@
         $thname = str_replace("'", "\\'", $thname);
 
          
-        $sql = "INSERT INTO `reply` (`re_id`, `re_content`, `th_id`, `product_id`, `reply_by`, `timestamp`) VALUES (NULL, '$comment', '$id', 'product_id', '$thname', current_timestamp());";
+        $sql = "INSERT INTO `reply` (`re_id`, `re_content`, `th_id`, `product_id`, `reply_by`, `timestamp`) VALUES (NULL, '$comment', '$id', '$product_id', '$thname', current_timestamp());";
         $result = mysqli_query($conn, $sql);
         
         $showAlert = true;
