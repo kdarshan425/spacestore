@@ -32,7 +32,7 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
         <a  href="index.php" onclick="dk_close()">Home</a>      
         <a  href="admin/logout.php " onclick="dk_close()">Logout</a>
         <a  href="cart.php" onclick="dk_close()">Cart</a>
-        <a  href="products.php" onclick="dk_close()">Products</a>
+        <a  href="product.php" onclick="dk_close()">Products</a>
         <a  href="my_orders.php" onclick="dk_close()">My Orders</a>  
        
     </nav>
