@@ -51,6 +51,9 @@
     <div > 
         
     <?php include 'partials/dbconnect.php';?>
+    <!--====== Header section ======-->
+    <?php include 'partials/header.php';?>
+    <!--====== Header section End ======-->
     
     <?php
     $id = $_GET['threadid'];
@@ -121,7 +124,6 @@
     </div>
 
     <?php
-    session_start(); 
     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
         $blog_owner = $_SESSION['sno'];
     ?>
