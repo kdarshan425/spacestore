@@ -77,8 +77,7 @@ if (!isset($_SESSION['sno'])) {
                                     <td>' . '#' . $row['id'] . '</td>
                                     <td>' . $row['Name'] . '</td>
                                     <td>Rs ' . $row['Price'] . '</td>
-                                    <td><a href="remove_item.php?id='.$id.'" class="remove_item_link"> <img src="img/del.png" style="height:30px;" alt="remove"></a></td>
-                                    </tr>';
+                                   </tr>';
                                 }
                                 $id = rtrim($id, ", ");
                                 echo "<tr>
