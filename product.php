@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | SPACE STORE</title>
-    
+    <title>Products | SPACE STORE</title>    
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://use.fontawesome.com/9fc82f32ca.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,25 +23,65 @@
             font-family: 'Raleway', sans-serif;
             font-weight:bold;
         }
+        .blog-search{
+            max-width:600px;   
+        }
+        @media (max-width: 768px){
+            .blog-search{
+            max-width:500px;
+        }
+        }
+
+        @media (max-width: 568px){
+            .blog-search{
+            max-width:250px;
+        }
+        }
     </style>
 </head>
 <body>
     
     <?php include 'partials/dbconnect.php' ?>
+
+    <!--====== Header section ======-->
     <?php include 'partials/header.php';?>
-    <?php
+    <!--====== Header section End ======-->
     
-    // echo $_SESSION['loggedin'] ;
-    // echo $_SESSION['useremail'];
-    ?>
     
     <div style="padding-top:100px;">
         <div class="container">
             <div class="container my-4" style="padding-bottom:30px;" id="ques">
-            <h1 class="text-center my-6 bar" style="padding:50px;font-family: 'Prompt', sans-serif;">Products</h1>
+                <h1 class="text-center my-6 bar" style="padding:50px;font-family: 'Prompt', sans-serif;">Products</h1>
 
             <!-- This is for power sources -->
             <div>
+
+            <div>
+                <div style="width:100%;height:100%;">
+                    <div style="padding-top:10px;">
+                        <div class="container ch-head" style="text-align: center;">
+                            <div style="padding:10px 20px 10px 20px;">
+                             
+                                <div>
+                                    <form action="search.php" method="get">
+                                        <center>
+                                        <div class="blog-search"> 
+                                            <center>
+                                            <div class="row">
+                                                <div style="padding-left:0px;padding-right:0px;" class="col-lg-11 col-md-11 col-10"><input style="height: calc(1.5em + .75rem + 2px);box-shadow: 0px 10px 20px -5px rgb(73 93 207 / 20%);border-radius: 0px" class="form-control " type="search" name="search" placeholder="     Search " aria-label="Search" ></div>
+                                                <div style="padding-left:0px;padding-right:0px;text-align:start;" class="col-lg-1 col-md-1 col-2"><button style="height: calc(1.5em + .75rem + 2px);box-shadow: 2px 2px 5px rgba(0,0,0,0.2);border:none;background-color:black;color:white;border-radius:0;width:100%;" class="btn1" type="submit">Q</button></div>
+                                            </div>
+                                            </center>
+                                        </div>
+                                        </center>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div>
                 <center>
                     <h2 style="padding:30px;font-family: 'Prompt', sans-serif;">Power source</h2>
