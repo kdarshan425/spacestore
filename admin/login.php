@@ -133,8 +133,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if($numRows==1){
         if($acc_status=='Active'){
             while($row){
-                if(password_verify($pass, $row['user_pass'] )){               
-                    session_start();
+                if(password_verify($pass, $row['user_pass'] )){              
                     $_SESSION['loggedin'] = true;
                     $_SESSION['useremail'] = $email;
                     $_SESSION['sno'] = $dno;

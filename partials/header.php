@@ -13,7 +13,8 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
             <a style="height: 60px;"></a>  
             <a  href="admin/logout.php">Logout</a>          
             <a  href="cart.php">Cart</a>
-            <a  href="product.php">Products</a>       
+            <a  href="product.php">Products</a>  
+            <a  href="my_orders.php">My Orders</a>     
                      
             <a href="javascript:void(0);" style="padding:22px;" class="icon"  onclick="dk_open()">
             <div class="hamburger-menu">
@@ -31,7 +32,8 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
         <a  href="index.php" onclick="dk_close()">Home</a>      
         <a  href="admin/logout.php " onclick="dk_close()">Logout</a>
         <a  href="cart.php" onclick="dk_close()">Cart</a>
-        <a  href="product.php" onclick="dk_close()">Products</a>
+        <a  href="products.php" onclick="dk_close()">Products</a>
+        <a  href="my_orders.php" onclick="dk_close()">My Orders</a>  
        
     </nav>
 <?php

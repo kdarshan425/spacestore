@@ -8,7 +8,7 @@ if (!isset($_SESSION['sno'])) {
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Carts | PACE STORE</title>
+        <title>My orders | PACE STORE</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">      
@@ -41,7 +41,7 @@ if (!isset($_SESSION['sno'])) {
         <div class="container">
             
         <div class="container my-4" style="padding-bottom:30px;" id="ques">
-            <h1 class="text-center my-6 bar" style="padding:50px;font-family: 'Prompt', sans-serif;">My Cart</h1>
+            <h1 class="text-center my-6 bar" style="padding:50px;font-family: 'Prompt', sans-serif;">My Orders</h1>
 
         </div>
         
@@ -56,7 +56,7 @@ if (!isset($_SESSION['sno'])) {
                         <?php
                         $sum = 0;
                         $user_id = $_SESSION['sno'];
-                        $query = "SELECT `product`.`price` AS `Price`, `product`.`id`, `product`.`name` AS `Name` FROM `user_items` JOIN `product` ON `user_items`.`item_id` = `product`.`id` WHERE `user_items`.`user_id`='$user_id' and `user_items`.`status`='Added to cart'";
+                        $query = "SELECT `product`.`price` AS `Price`, `product`.`id`, `product`.`name` AS `Name` FROM `user_items` JOIN `product` ON `user_items`.`item_id` = `product`.`id` WHERE `user_items`.`user_id`='$user_id' and `user_items`.`status`='complete'";
                         $result = mysqli_query($conn, $query);
                         if (mysqli_num_rows($result) >= 1) {
                             ?>
@@ -86,12 +86,7 @@ if (!isset($_SESSION['sno'])) {
                                 <td>Total</td>
                                 <td>Rs " . $sum . "</td>
                                 <td>
-                                <form action='razorpay/index.php' method='post'>
-                                    <input type='hidden' name='total_amount' value='$sum'>
-                                    <div>
-                                    <button style='background:black;color:white;border:none' type='submit' class='btn btn-primary'>Confirm</button>
-                                    </div>          
-                                </form>
+                                
                                 </tr>";
                                 ?>
                             </tbody> 
