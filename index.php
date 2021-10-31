@@ -110,7 +110,7 @@
                                     <div class="card-body">
                                         <center>
                                             <div style="padding:20px;">
-                                                <h5 style="color:black;" class="card-title" >Container</h5>                                                              
+                                                <h5 style="color:black;font-family: 'Raleway', sans-serif;font-weight:bold;" class="card-title" >Container</h5>                                                              
                                             </div>
                                         </center>
                                     </div>
@@ -124,7 +124,7 @@
                                     <div class="card-body">
                                         <center>
                                             <div style="padding:20px;">
-                                                <h5 style="color:black;" class="card-title" >Communication Devices</h5>      
+                                                <h5 style="color:black;font-family: 'Raleway', sans-serif;font-weight:bold;" class="card-title" >Communication Devices</h5>      
                                                                  
                                             </div>
                                         </center>
@@ -139,7 +139,7 @@
                                     <div class="card-body">
                                         <center>
                                             <div style="padding:20px;">
-                                                <h5 style="color:black;" class="card-title" >Books</h5>      
+                                                <h5 style="color:black;font-family: 'Raleway', sans-serif;font-weight:bold;" class="card-title" >Books</h5>      
                                                                  
                                             </div>
                                         </center>
@@ -154,7 +154,7 @@
                                     <div class="card-body">
                                         <center>
                                             <div style="padding:20px;">
-                                                <h5 style="color:black;" class="card-title" >Power source</h5>      
+                                                <h5 style="color:black;font-family: 'Raleway', sans-serif;font-weight:bold;" class="card-title" >Power source</h5>      
                                                           
                                             </div>
                                         </center>
